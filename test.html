@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script type="text/javascript">
+	function pp() {
+		alert(111);
+		 $('#create_group').click(function () {
+		 	
+   		var groupLeft = ($(window).width() - $('#add-group').width()) / 2;
+	 	var groupTop = $(document).scrollTop() + ($(window).height() - $('#add-group').height()) / 2;
+   		var gpObj = $('#add-group').show().css({
+	 		'left' : groupLeft,
+	 		'top' : groupTop
+	 	});
+   		createBg('group-bg');
+   		drag(gpObj, gpObj.find('.group_head'));
+   })}
+	</script>
+</head>
+<body>
+	<span id='create_group'>创建新分组</span>
+	<div id='add-group'>
+        <div class="group_head">
+            <span class='group_text fleft'>创建好友分组</span>
+        </div>
+        <div class='group-name'>
+            <span>分组名称：</span>
+            <input type="text" name='name' id='gp-name'>
+        </div>
+        <div class='gp-btn-wrap'>
+            <span class='add-group-sub'>添加</span>
+            <span class='group-cencle'>取消</span>
+        </div>
+    </div>
+</body>
+</html>

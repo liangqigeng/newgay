@@ -1,0 +1,45 @@
+[ 2019-09-27T17:25:32+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000048s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001265s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002791s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002851s ]
+SQL: SHOW COLUMNS FROM `hd_follow` [ RunTime:0.0046s ]
+SQL: SELECT `follow` FROM `hd_follow` WHERE `fans` = 8  [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `hd_weibo` [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0018s ]
+SQL: SHOW COLUMNS FROM `hd_picture` [ RunTime:0.0019s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.time AS time,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.username AS username,userinfo.face50 AS face,picture.mini AS mini,picture.medium AS medium,picture.max AS max FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid = userinfo.uid LEFT JOIN hd_picture picture ON weibo.id = picture.wid WHERE weibo.uid IN ('8','4','7')  [ RunTime:0.0008s ]
+ERR: Think\Model:p方法不存在！
+
+[ 2019-09-27T17:25:33+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000619s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001194s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+SQL: SHOW COLUMNS FROM `hd_follow` [ RunTime:0.0027s ]
+SQL: SELECT `follow` FROM `hd_follow` WHERE `fans` = 8  [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `hd_weibo` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0023s ]
+SQL: SHOW COLUMNS FROM `hd_picture` [ RunTime:0.0018s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.time AS time,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.username AS username,userinfo.face50 AS face,picture.mini AS mini,picture.medium AS medium,picture.max AS max FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid = userinfo.uid LEFT JOIN hd_picture picture ON weibo.id = picture.wid WHERE weibo.uid IN ('8','4','7')  [ RunTime:0.0009s ]
+ERR: Think\Model:p方法不存在！
+
+[ 2019-09-27T17:29:57+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000011s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000784s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000944s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000975s ]
+SQL: SHOW COLUMNS FROM `hd_follow` [ RunTime:0.0014s ]
+SQL: SELECT `follow` FROM `hd_follow` WHERE `fans` = 8  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `hd_weibo` [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `hd_userinfo` [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `hd_picture` [ RunTime:0.0019s ]
+SQL: SELECT weibo.id AS id,weibo.content AS content,weibo.isturn AS isturn,weibo.time AS time,weibo.turn AS turn,weibo.keep AS keep,weibo.comment AS comment,weibo.uid AS uid,userinfo.username AS username,userinfo.face50 AS face,picture.mini AS mini,picture.medium AS medium,picture.max AS max FROM hd_weibo weibo LEFT JOIN hd_userinfo userinfo ON weibo.uid = userinfo.uid LEFT JOIN hd_picture picture ON weibo.id = picture.wid WHERE weibo.uid IN ('8','4','7')  [ RunTime:0.0007s ]
+ERR: Think\Model:p方法不存在！
+
